@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6f4ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  display: none;
+}
+input {
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+}
+label {
+  margin-top: 5px;
+}
+.contact-form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 100vh;
+  max-width: 450px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 1em;
+  position: relative;
+}
+.names {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+  width: 100%;
+}
+.lname-box,
+.fname-box {
+  width: 45.2%;
+}
+#first-name {
+  width: 100%;
+  padding: 7px;
+  border-color: hsl(186, 15%, 59%);
+  outline: none;
+  cursor: pointer;
+  outline: none;
+}
+#last-name {
+  width: 100%;
+  padding: 7px;
+  border-color: hsl(186, 15%, 59%);
+  outline: none;
+  cursor: pointer;
+}
+
+#first-name:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+#last-name:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+.email-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#email {
+  padding: 7px;
+  border-color: hsl(186, 15%, 59%);
+  cursor: pointer;
+  outline: none;
+}
+#email:hover {
+  border-color: hsl(169, 82%, 27%);
+}
+.contact-form h2 {
+  font-size: 24px;
+  color: hsl(187, 24%, 22%);
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333333;
+}
+.radio-group {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+}
+.query {
+  display: flex;
+  align-items: center;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.query:active {
+  color: hsl(148, 38%, 91%);
+}
+.query:hover {
+  background-color: hsl(148, 38%, 91%);
+}
+.query label {
+  margin-left: 10px;
+  align-self: center;
+  cursor: pointer;
+}
+#message {
+  width: 100%;
+  border: 1px solid hsl(186, 15%, 59%);
+  border-radius: 5px;
+  outline: none;
+}
+.checkbox-group {
+  display: flex;
+  gap: 0.5em;
+}
+.checkbox-group label {
+  font-size: 1rem;
+  color: hsl(187, 24%, 22%);
+}
+button {
+  width: 100%;
+  padding: 1em;
+  background-color: hsl(169, 82%, 27%);
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.empty-fields__name {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-bottom: 0.625em;
+  opacity: 0;
+}
+.empty-fields__email {
+  display: flex;
+  gap: 7em;
+  margin-bottom: 0.625em;
+  opacity: 0;
+}
+.empty-fields__query {
+  display: flex;
+  gap: 7em;
+  margin-bottom: 0.625em;
+  opacity: 0;
+}
+.empty-fields__message {
+  display: flex;
+  gap: 7em;
+  margin-bottom: 0.625em;
+  opacity: 0;
+}
+.empty-fields__consent {
+  display: flex;
+  gap: 7em;
+  margin-bottom: 0.625em;
+  opacity: 0;
+}
+.field-required {
+  font-size: 13px;
+  color: hsl(0, 66%, 54%);
+}
+.success-modal {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.725em;
+  position: absolute;
+  background-color: hsl(187, 24%, 22%);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 100%;
+  left: 17%;
+  display: none;
+}
+.close-btn-checkbox {
+  cursor: pointer;
+}
+.close-btn-checkbox:hover {
+  color: hsl(187, 24%, 22%);
+}
+.success-modal__top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+}
+.success-modal__top p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+.success-modal__text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.success-modal__text p {
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
+}
+@media (max-width: 500px) {
+  .contact-form {
+    width: 100vw;
+    max-width: 320px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  .success-modal {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.625em;
+    position: absolute;
+    background-color: hsl(187, 24%, 22%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 100%;
+    left: 8%;
+    display: none;
+  }
+}

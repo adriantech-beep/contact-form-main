@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="frontendmentor.io" content="adrian.dev" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <header><h1>Contact Form</h1></header>
+    <main>
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="/" method="GET" id="form">
+          <div class="names">
+            <div class="fname-box">
+              <label for="first-name">First Name *</label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                required
+                autocomplete="additional-name"
+              />
+            </div>
+            <div class="lname-box">
+              <label for="last-name">Last Name *</label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                required
+                autocomplete="additional-name"
+              />
+            </div>
+          </div>
+          <div class="empty-fields__name">
+            <p class="field-required">This field is required</p>
+            <p class="field-required">This field is required</p>
+          </div>
+          <div class="email-input">
+            <label for="email">Email Address *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="additional-name"
+            />
+          </div>
+          <div class="empty-fields__email">
+            <p class="field-required">PLease enter a valid email</p>
+          </div>
+
+          <div class="radio-group">
+            <div class="query">
+              <label>
+                <input
+                  type="radio"
+                  id="general-enquiry"
+                  name="query-type"
+                  value="general-enquiry"
+                  required
+                />
+                General Enquiry
+              </label>
+            </div>
+
+            <div class="query">
+              <label>
+                <input
+                  type="radio"
+                  id="support-request"
+                  name="query-type"
+                  value="support-request"
+                  required
+                />
+                Support Request
+              </label>
+            </div>
+          </div>
+          <div class="empty-fields__query">
+            <p class="field-required">PLease select query type</p>
+          </div>
+
+          <div>
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="empty-fields__message">
+            <p class="field-required">This field is required</p>
+          </div>
+
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" id="consent" name="consent" required />
+              I consent to being contacted by the team *
+            </label>
+          </div>
+          <div class="empty-fields__consent">
+            <p class="field-required">
+              To submit this form please consent to being contacted
+            </p>
+          </div>
+
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+        <div class="success-modal">
+          <div class="success-modal__top">
+            <img
+              class="close-btn-checkbox"
+              src="assets/images/icon-success-check.svg"
+              alt="a icon checkbox"
+            />
+            <p>Message Sent!</p>
+          </div>
+          <div class="success-modal__text">
+            <p>Thanks for completing the form.We'll be in touch soon!</p>
+          </div>
+        </div>
+      </div>
+      <!-- <footer>
+      <p>Challenged by:<a href="www.frontendmentor.io"></a></p>
+    </footer> -->
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
