@@ -231,7 +231,7 @@ button:hover {
   }
   .success-modal {
     width: 100%;
-    max-width: 280px;
+    max-width: 325px;
     padding: 0.625em;
     position: absolute;
     background-color: hsl(187, 24%, 22%);
